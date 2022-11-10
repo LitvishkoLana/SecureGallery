@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GalleryViewController" customModule="SecureGallery" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="ygm-Q4-XW1" id="F9Y-Oa-2KR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygm-Q4-XW1">
+                    <rect key="frame" x="50" y="97" width="290" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icl-B1-wKO">
+                    <rect key="frame" x="50" y="715" width="290" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="r6A-vK-dYn"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Add image">
+                        <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="pickImage:" destination="-1" eventType="touchUpInside" id="brU-AT-00g"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ygm-Q4-XW1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="7DV-Sr-agz"/>
+                <constraint firstItem="Icl-B1-wKO" firstAttribute="top" secondItem="ygm-Q4-XW1" secondAttribute="bottom" constant="50" id="ITl-sn-s46"/>
+                <constraint firstItem="ygm-Q4-XW1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="S8i-Kw-YTw"/>
+                <constraint firstItem="Icl-B1-wKO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="TWd-h9-adz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Icl-B1-wKO" secondAttribute="trailing" constant="50" id="U4F-ts-GiB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ygm-Q4-XW1" secondAttribute="trailing" constant="50" id="ahn-pa-mD5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Icl-B1-wKO" secondAttribute="bottom" constant="50" id="hRu-ps-Iie"/>
+            </constraints>
+            <point key="canvasLocation" x="124.61538461538461" y="-11.374407582938389"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
